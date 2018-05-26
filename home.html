@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <script>
+        $(document).ready(function(){
+          $( "#regButton" ).click(function() {
+            window.open('signup.html');
+          });
+        });
+      </script>
+      <script type="text/javascript" src="cordova.js"></script>
+
+      <div id="homePage">
+        <div data-role="page">
+
+        	<div data-role="header">
+        		<h1>Your ToDo-s for Life :)</h1>
+        	</div><!-- /header -->
+
+          <div id="login-page">
+              <div class=header>
+                <h1>Home sweet home</h>
+              </div>
+
+              <img src="http://www.angelfire.com/ri/rishpy/images/mooli.jpg" alt="Mountain View">
+              <a id="regButton" href="#" class="ui-btn ui-shadow">Register</a>
+              <a id="logInButton" href="#" class="ui-btn ui-shadow">Sign In</a>
+          </div>
+
+
+        </div><!-- /page -->
+
+      </div>
+
+
+    </body>
+</html>
