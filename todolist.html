@@ -10,8 +10,13 @@
 
     </head>
     <body>
-
-        <script type="text/javascript" src="cordova.js"></script>
+        <script>
+          $(document).ready(function(){
+            $("#deleteNewTask").onclick(function(){
+              $(0).click();
+            });
+          });
+        </script>
         <div data-role="page">
 
         	<div data-role="header">
@@ -29,7 +34,7 @@
                   <input type="datetime-local" data-clear-btn="false" name="datetime-3" id="datetime-3" value="">
 
                   <a onclick="myFunction()" id="submitNewToDoButton" style="height:30px; font-size:20px;font-weight: bold;" href="#" class="ui-btn ui-shadow">Create Task</a>
-                  <a onclick="myFunction()" id="deleteNewTask" style="height:30px; font-size:20px;font-weight: bold;" href="#" class="ui-btn ui-shadow">Delete Task</a>
+                  <a onclick="myFunction()" id="deleteNewTask" style="height:30px; font-size:20px;font-weight: bold;" href="#" class="ui-btn ui-shadow">Cancel</a>
               </fieldset>
             </form>
             <div class=header>
